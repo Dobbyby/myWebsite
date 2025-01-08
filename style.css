@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+html, body {
+    height: 100%;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    height: 69px;
+}
+.logo img{
+    height: 70px;
+    width: 300px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #222;
+    position: relative;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00e5ff;
+}
+.hkmda{
+    text-align:justify;
+    font-size: 20px;
+    padding: 0 100px 0 100px;
+}
+.hkmda h1{
+    text-align: center;
+}
+nav {
+    display: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.5s;
+    padding: 25px 10px 25px 10px;
+}
+nav ul li a:hover {
+    color: #111;
+    background-color: #00e5ff;
+}
+.menuicon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+.menuicon:hover {
+    color: #00e5ff;
+}
+.icerik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.icerik img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #00e5ff;
+    margin-bottom: 20px;
+}
+.icerik h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+.icerik p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.icerik .contact-info {
+    margin-top: 20px;
+}
+.icerik .contact-info p {
+    margin: 5px 0;
+}
+.sosyal {
+    margin-top: 20px;
+}
+.sosyal a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.5s;
+    padding: 10px;
+}
+.sosyal a:hover {
+    color: #111;
+    background-color: #00e5ff;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #888;
+    margin-top: auto;
+}
+.galeri {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.galeri img {
+    width: 100%;
+    display: flex;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.foto{
+    display: flex;
+}
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.galeri img:hover {
+    transform: scale(1.02);
+}
+.galerijs {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+    cursor: pointer;
+}
+.galerijs-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    cursor: auto;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+    cursor: pointer;
+    z-index: 10;
+}
+.close:hover,
+.close:focus {
+    color: #00e5ff;
+}
+.galerijs:hover {
+    cursor: pointer;
+}
+.becerilerdiv {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.becerilerdiv h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.becerilerim {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.diller {
+    background-color: #333;
+    border: 3px solid #00e5ff;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.diller h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.diller p {
+    margin: 10px 0 0;
+    color: #00e5ff;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 0 15px; 
+    }
+    .menuicon {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        border-top: 1px solid #444;
+        z-index: 10;
+        display: none;
+    }
+    nav.active {
+        display: flex;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}

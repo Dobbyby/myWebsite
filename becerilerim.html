@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+            <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNN6C9XQET"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KNN6C9XQET');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Logo.png" type="image/png" >
+    <title>Becerilerim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="img/Logo.png" alt=""></div>
+        <div class="menuicon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="becerilerim.html">Becerilerim</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="becerilerdiv">
+        <h1>Becerilerim</h1>
+        <div class="becerilerim">
+            <div class="diller">
+                <h3>HTML & CSS</h3>
+                <p>Web tasarımı ve temel kullanıcı arayüzü geliştirme. <br>Back-End ve Front-End</p>
+            </div>
+            <div class="diller">
+                <h3>JavaScript</h3>
+                <p>Dinamik ve etkileşimli web sayfaları geliştirme.</p>
+            </div>
+            <div class="diller">
+                <h3>Python</h3>
+                <p>Veri analizi, yapay zeka ve otomasyon projeleri.<br>Temel düzeyde Python kütüphaneleri.(Selenium, PyAutoGui vs.)</p>
+            </div>
+            <div class="diller">
+                <h3>SQL</h3>
+                <p>Veri tabanı yönetimi ve sorgulama. <br>MySQL, MongoDB, Access veritabanları ile ilgilendim.</p>
+            </div>
+            <div class="diller">
+                <h3>C#</h3>
+                <p>Oyun geliştirme ve masaüstü uygulamalarında güçlü programlama. <br>Basit oyun tasarımı Unity ve Unreal Engine kullandım.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Eray BAYDUR. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
